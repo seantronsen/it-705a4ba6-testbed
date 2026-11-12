@@ -46,7 +46,7 @@ dockers_v2:
     ids: [testbed]
     dockerfile: Dockerfile
     images:
-      - ghcr.io/openchami/github-actions-testbed
+      - ghcr.io/seantronsen/it-705a4ba6-testbed
     tags:
       - "{{ .Tag }}"                                   # vX.Y.Z or pr-N
       - '{{ if ne .Env.IS_PR_BUILD "true" }}{{ .Major }}.{{ .Minor }}{{ end }}'
@@ -67,7 +67,7 @@ dockers_v2:
     ids: [testbed]
     dockerfile: Dockerfile
     images:
-      - ghcr.io/openchami/github-actions-testbed-alt
+      - ghcr.io/seantronsen/it-705a4ba6-testbed-alt
     tags:
       - "{{ .Tag }}"                                   # vX.Y.Z or pr-N
       - '{{ if ne .Env.IS_PR_BUILD "true" }}{{ .Major }}.{{ .Minor }}{{ end }}'
